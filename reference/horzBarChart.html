@@ -48,17 +48,17 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">horzBarChart</span><span class="op">(</span><span class="va">df</span>, <span class="va">color_scale</span>, width <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">horzBarChart</span><span class="op">(</span><span class="va">df</span>, <span class="va">scale_colors</span>, width <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>df</dt>
-<dd><p>Required, a tibble or data frame that has been pre-processed with dataSumm(),</p></dd>
+<dd><p>Required, a tibble or data frame that has been pre-processed with dataSumm().</p></dd>
 
 
-<dt>color_scale</dt>
-<dd><p>a char vector of the colors for the scale items</p></dd>
+<dt>scale_colors</dt>
+<dd><p>Required, a character vector of the colors for the scale items.</p></dd>
 
 
 <dt>width</dt>
@@ -90,8 +90,8 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">role_color</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#2C2C4F"</span>, <span class="st">"#4B9FA6"</span>, <span class="st">"#79AB53"</span>, <span class="st">"#767171"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">horzBarChart</span><span class="op">(</span><span class="va">role_summ</span>, <span class="va">role_color</span>, width <span class="op">=</span> <span class="fl">0.6</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in horzBarChart(role_summ, role_color, width = 0.6):</span> object 'color_scale' not found</span>
+<span class="r-in"><span><span class="fu">horzBarChart</span><span class="op">(</span>df <span class="op">=</span> <span class="va">role_summ</span>, scale_colors <span class="op">=</span> <span class="va">role_color</span>, width <span class="op">=</span> <span class="fl">0.6</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="horzBarChart-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
