@@ -101,7 +101,7 @@
 </h3>
 <p><code><a href="reference/recodeCat.html">recodeCat()</a></code> is a helper function to recode numeric data into factor variables with the desired levels.</p>
 <p><code><a href="reference/recodeCat.html">recodeCat()</a></code> takes in three arguments:</p>
-<p><strong>df</strong> Required, a tibble/data frame of survey items that are numeric variables that need to be converted into factor variables. Numeric variables in the data can be anywhere from 3 to 7 point scales.</p>
+<p><strong>df</strong> Required, a [tibble][tibble::tibble-package]/data frame of survey items that are numeric variables that need to be converted into factor variables. Numeric variables in the data can be anywhere from 3 to 7 point scales.</p>
 <p><strong>scale_labels</strong> Required, a character vector of labels of the desired scale levels. The function will use this vector to convert the numeric variables into factor variables, must be arranged low to high with the exact number of levels as the data contains, or else NA will be returned.</p>
 <p><strong>number_levels</strong> A character vector that of all the numeric values original numeric variables that are to be recoded, in the correct order. Both scale_labels and number_levels should be in the same order that the user wants the variables to be recoded. For example, if a variable from df has 3 numeric values of 1,2,and 3, to be recoded to as “Minimal”, “Slight”, “Moderate”, number_levels should equal: c(1,2,3) and scale_labels should equal: c(“Minimal”, “Slight”, “Moderate”). See more examples below. Defaults to NULL.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
@@ -151,7 +151,7 @@
 </h3>
 <p><code><a href="reference/stackedBarChart.html">stackedBarChart()</a></code> creates a fully stacked bar chart that has the branding/style of The Mark USA, Inc.</p>
 <p><code><a href="reference/stackedBarChart.html">stackedBarChart()</a></code> takes up to 7 arguments, first 2 are required:</p>
-<p><strong>df</strong> Required, A tibble or data frame of survey items that are categorical/factor variables, in 5 point scales, can be a single time point or pre-post, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
+<p><strong>df</strong> Required, A [tibble][tibble::tibble-package] or data frame of survey items that are categorical/factor variables, in 5 point scales, can be a single time point or pre-post, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
 <p><strong>scale_labels</strong> Required, a character vector of 5 levels to set the scale for the plot.</p>
 <p><strong>pre_post</strong> Default is FALSE. If true, returns a pre-post stacked bar chart, arranged by question.</p>
 <p><strong>percent_label</strong> Default is TRUE. Labels the bars based on percentages. If FALSE, labels the bars with the number of answers per response.</p>
@@ -208,7 +208,7 @@
 </h3>
 <p><code><a href="reference/divBarChart.html">divBarChart()</a></code> creates a diverging and fully stacked bar chart that has the branding and style of The Mark USA, Inc.</p>
 <p><code><a href="reference/divBarChart.html">divBarChart()</a></code> takes in up to six arguments, first two are required:</p>
-<p><strong>df</strong> Required, A tibble or data frame of survey items that are categorical/factor variables, in 5 point scales, must be pre-post data, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
+<p><strong>df</strong> Required, A [tibble][tibble::tibble-package] or data frame of survey items that are categorical/factor variables, in 5 point scales, must be pre-post data, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
 <p><strong>scale_labels</strong> Required, character vector of levels of the factor variables to be added to the plot, this will set the scale for the x-axis of the bar chart and its labels.</p>
 <p><strong>percent_label</strong> Default is TRUE. Labels the bars based on percentages. If FALSE, labels the bars with the number of answers per response.</p>
 <p><strong>question_order</strong> A character vector to sort the order of the questions. Default is NULL.</p>
@@ -231,7 +231,7 @@
 <code>arrowChart()</code><a class="anchor" aria-label="anchor" href="#arrowchart"></a>
 </h3>
 <p><code><a href="reference/arrowChart.html">arrowChart()</a></code> take in three arguments:</p>
-<p><strong>df</strong> A tibble/data frame of survey items that are numeric variables, must be in 5 point scales and pre-post, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
+<p><strong>df</strong> A [tibble][tibble::tibble-package]/data frame of survey items that are numeric variables, must be in 5 point scales and pre-post, that will be inserted into a stacked bar chart with The Mark USA branding.</p>
 <p><strong>scale_labels</strong> character vector to set up the labels for the x-axis, this will match the numeric response in the data.</p>
 <p><strong>group_colors</strong> character vector of hex codes for colors to associate to each group to, e.g. this data has two groups and this function creates an overall group so the user needs to pass the function in the group_colors argument a character vector of three colors- colors need to be in the order you want them associated to the group based on the factor levels for the group variable, last color will be the overall group of “all”.</p>
 <p><code><a href="reference/arrowChart.html">arrowChart()</a></code> creates an arrow chart from numeric data based on the pre-post averages for each group and the overall group for the whole data set with the branding and style of The Mark USA, Inc. <code><a href="reference/arrowChart.html">arrowChart()</a></code> sorts the chart with the highest post scores on the top and lowest on the bottom.</p>
