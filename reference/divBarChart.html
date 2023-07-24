@@ -70,8 +70,9 @@ variables, in 3 to 7 point scales, that will be inserted into a diverging bar ch
 
 
 <dt>scale_labels</dt>
-<dd><p>Required, a character vector of levels to set the scale for the plot,
-accepts a character vector of 3 to 7 items.</p></dd>
+<dd><p>Required, a character vector of labels for the response scale, must be in the desired order,
+e.g. if you have a 5 item scale of minimal to extensive it should look like this: <code>levels_min_ext &lt;- c("Minimal", "Slight", "Moderate", "Good", "Extensive")</code>.
+This argument accepts a character vector of 3 to 7 items.</p></dd>
 
 
 <dt>overall_n</dt>
